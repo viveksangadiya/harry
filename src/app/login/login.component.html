@@ -1,0 +1,24 @@
+<div class="login-container">
+    <img src="assets/image/hp.png" class="film">
+    <div class="logo">
+        Harry
+    </div>
+   <div class="decs">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   </div>
+   <form class="login-form" [formGroup]="signIn" (ngSubmit)="onSubmitData()">
+     
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" formControlName="email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" formControlName="password">
+    </div>
+    <div class="error"> {{errorMsg}}</div>
+    <button type="submit" class="submit">Submit</button>
+
+    <!-- {{signIn.value | json}} -->
+</form>
+</div>
